@@ -832,8 +832,8 @@ class StatusBar(tk.Frame):
     def get_sb_images(self):
         """Imports, resizes and stores images needed for Status Bar."""
 
-        clock = Image.open('clock.png').resize((40,40))
-        lightning = Image.open('lightning.png').resize((40,40))
+        clock = Image.open('images\clock.png').resize((40,40))
+        lightning = Image.open('images\lightning.png').resize((40,40))
 
         self._sb_images.append(ImageTk.PhotoImage(clock))
         self._sb_images.append(ImageTk.PhotoImage(lightning))
